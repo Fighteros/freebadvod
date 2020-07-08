@@ -19,7 +19,7 @@ logo = """
                                                                                     Ahmed M. Abd El-Ghany                        """
 print(logo)
 pssw = input(' [-] Enter Password: ').strip()
-if pass=='fighteros00'
+if pssw=='fighteros00'
   with requests.Session() as (req):
       number =input('[-] Enter vodafone Number: ')
       pwd = input('[-] Enter ana vodafone password please: ').strip()
