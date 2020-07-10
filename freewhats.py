@@ -1,4 +1,5 @@
 from time import sleep 
+import sys
 logo = """
  ____    ____  ____   ___     ___   ___ ___         __  ____    ____    __  __  _    ___  ___       
 |    \  /    ||    \ |   \   /   \ |   |   |       /  ]|    \  /    |  /  ]|  |/ ]  /  _]|   \      
@@ -16,9 +17,11 @@ logo = """
 |     ||     |    |  |    |  | |     ||  |  |  |  |  |     ||  .  \     |\    |                     
 |_____||____/     |__|   |____||___,_||__|__|  |__|  |_____||__|\_|\___/  \___|  fighteros121212@gmail.com                             
                                                                                     Ahmed M. Abd El-Ghany                        """
-def slowprint(str):
-  for letter in str:
-    print(letter)
-    sleep(2)
-slowptint(logo)
+def slowprint(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        sleep(1. / 100)
+slowprint(logo)
 slowprint("sorry script is down due to updates")
+input("exiting .......")
